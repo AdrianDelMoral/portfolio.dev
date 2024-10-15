@@ -1,6 +1,6 @@
 # Portfolio personal de programador Web Frontend
 
-## [Link Para ver mi Portfolio: *click en la imágen*]
+## *[Click] en la imágen Link para ver mi Portfolio:*
 <div align="center">
 <a href="https://portfolio-adrian-del-moral.netlify.app/">
     <img src="./public/porfolio.webp">
