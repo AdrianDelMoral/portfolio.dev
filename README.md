@@ -6,5 +6,3 @@
     <img src="./public/porfolio.webp">
 </a>
 </div>
-
-![image](./public/porfolio.webp)
