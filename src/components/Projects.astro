@@ -1,71 +1,110 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import TailwindCSS from "./icons/Tailwind.astro"
+import Css from "./icons/Css.astro"
+import Html from "./icons/Html.astro"
+import Angular from "./icons/Angular.astro"
+import Node from "./icons/Node.astro"
+import TypeScript from "./icons/TypeScript.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import React from "./icons/React.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#565900] text-white",
+    icon: JavaScript,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#000459] text-white",
+    icon: TypeScript,
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: TailwindCSS,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-[#005956] text-white",
+    icon: Css,
+  },
+  HTML: {
+    name: "HTML",
+    class: "bg-[#593700] text-white",
+    icon: Html,
+  },
+  ANGULAR: {
+    name: "ANGULAR",
+    class: "bg-[#590000] text-white",
+    icon: Angular,
+  },
+  NODEJS: {
+    name: "NODEJS",
+    class: "bg-[#355900] text-white",
+    icon: Node,
+  },
+  REACT: {
+    name: "REACT",
+    class: "bg-[#001F59] text-white",
+    icon: React,
   },
 }
 const PROJECTS = [
+  {
+    title: "Calculadora de Propinas",
+    description:
+      "Proyecto poniendo en práctica sobre localStorage, Buenas prácticas TypeScript + React y Tailwind",
+    link: "https://tips-calculator-admm.netlify.app/",
+    image: "/projects/TipsCalculator.webp",
+    tags: [TAGS.TAILWIND, TAGS.REACT, TAGS.TYPESCRIPT, TAGS.CSS],
+  },
+  {
+    title: "GuitarLA",
+    description:
+      "Proyecto poniendo en práctica lo aprendido sobre Almacenamiento en LocalStorage, TypeScript + React y Buenas Prácticas",
+    link: "https://guitarla-admm-typescript.netlify.app/",
+    image: "/projects/GuitarLaTs.webp",
+    tags: [TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.REACT],
+  },
+  {
+    title: "Calorie Tracker",
+    description:
+      "Proyecto realizado para seguir el proceso de Cantidad de Calorias quemadas VS Cantidad de Calorias Consumidas",
+    link: "https://app.netlify.com/sites/onepercentapp/overview",
+    github: "https://github.com/AdrianDelMoral/calorie-tracker/blob/main/README.md",
+    image: "/projects/CalorieTracker.webp",
+    tags: [TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.REACT],
+  },
+  {
+    title: "One Percent App",
+    description:
+      "Proyecto realizado en Typescript y React en base a la página de un conocido que es entrenador personal y mejorar su Landing Page y marca personal",
+    link: "https://onepercentapp.netlify.app/",
+    github: "https://github.com/AdrianDelMoral/onepercent_landing_page",
+    image: "/projects/onePercentApp.webp",
+    tags: [TAGS.TAILWIND, TAGS.REACT, TAGS.TYPESCRIPT],
+  },
   {
     title: "CryptoApp - Aplicación para cotizar las criptomonedas al momento",
     description:
       "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
     link: "https://cotizar-criptos-admm.netlify.app/",
-    github: "https://github.com/pheralb/svgl",
+    github: "https://github.com/AdrianDelMoral/criptos_react",
     image: "/projects/CryptoApp.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "Proyecto",
-    description:
-      "info proyecto",
-    link: "https://react-site-veterinaria.netlify.app/",
-    image: "/projects/link.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "Proyecto",
-    description:
-      "info proyecto",
-    link: "https://react-site-veterinaria.netlify.app/",
-    image: "/projects/link.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "Proyecto",
-    description:
-      "info proyecto",
-    link: "https://app.netlify.com/sites/onepercentapp/overview",
-    image: "/projects/link.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "Proyecto",
-    description:
-      "info proyecto",
-    link: "https://guitarla-admm-typescript.netlify.app/",
-    image: "/projects/link.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.TAILWIND, TAGS.REACT],
   },
   {
     title: "Angular Login / Register",
     description:
       "Prueba técnica realizada en Angular y Node con validaciónes tanto en Frontend y Backend con Node y Angular",
-    link: "https://usersapp-quasar.netlify.app/auth/login",
-    image: "/projects/link.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    link: "https://usersapp-quasar.netlify.app/",
+    github: "https://github.com/AdrianDelMoral/angular-auth",
+    image: "/projects/LoginRegister.webp",
+    tags: [TAGS.CSS, TAGS.HTML, TAGS.ANGULAR, TAGS.NODEJS],
   },
 ]
 ---
