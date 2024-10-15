@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Formandome de Forma Autodidácta / Trabajando",
+    description:
+      "Actualmente estoy formandome en mi tiempo libre de forma autodidácta, viendo cursos de udemy, youtube... etc y haciendo pequeños proyectos de las tecnologías que más me interesan. Además de trabajando en una empresa y mi trabajo está relacionado con las tecnologías actuales.",
+  },
+  {
+    date: "Marzo 2023 - Septiembre 2023",
+    title: "Frontend Developer",
+    company: "Sr.Jingles",
+    description:
+      "Programador web Frontend para proyectos de la empresa Sr.Jingles, trabajando con distintos lenguajes de programación, tales como Tailwind, JavaScript, Laravel, Html5 y CSS3. Además de con las plantillas de Laravel Blade.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
